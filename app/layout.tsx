@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+<<<<<<< HEAD
 import { ClerkProvider } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/modal-provider";
 import { Toaster } from "react-hot-toast";
 import { ToasterProvider } from "@/providers/toast-provider";
 
+=======
+>>>>>>> 4e60d2240aac6c2620da5470395680eb6180e3f2
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< HEAD
     <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
@@ -28,5 +32,10 @@ export default function RootLayout({
         {children}</body>
     </html>
     </ClerkProvider>
+=======
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+>>>>>>> 4e60d2240aac6c2620da5470395680eb6180e3f2
   );
 }
